@@ -1,0 +1,54 @@
+<!-- 
+Name: Anthony Kipple
+Class: CSC102
+Assignment: Mission Control, We Have Blastoff! 
+Requirements:
+* You will need to create the variable initialize it to 10. 
+* You will decrement currTme by 1. 
+* Then you will repeat this 10 times (cut and paste).  Later we’ll use loops so you don’t have to cut and paste. 
+* After the countdown reaches zero, print Blastoff!
+* Have at least 1 creative element – images, fonts, background color,etc. 
+* Create a nice look and feel for the user.
+* Comment above almost every line of your code
+* Put a comment at the top of your HTML file with your name in it.
+* You CANNOT turn in my example code.  It must be significantly customized.
+Write a .html with JavaScript code that:
+* counts down from 10 to 0 using a variable
+* decrements the variable
+* outputs Blastoff when the countdown time = 0
+* NOTE: You must have the function in a Javascript file and 
+  must have a .css file as well.
+Objectives:
+* Use a library function
+* Create Variables
+* Output variables 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mission Control, We Have Blastoff!</title>
+    <!-- add icon link -->
+    <link rel="icon" href="nasa-logo.png">
+    <script src="MissionControl.js"></script>
+    <link rel="stylesheet" href="MissionControl.css">
+</head>
+<body>
+    <ul class="nav">
+        <li>
+            <a href="MissionControl.html">
+                <img class="header-image" src="nasa-logo.png" alt="nasa-logo">
+            </a>
+        </li>
+        <li>
+            <a href="MissionControl.html"><h1>Home</h1></a>
+        </li>
+    </ul>
+    <h2>Mission Control, We Have Blastoff!</h2>
+    <div class="container">
+        <img src="sci-fi-control-room.gif" alt="Snow" style="width:100%;">
+        <button class="btn" id="countdownTimer" onclick="countdown();">Initiate Countdown</button>
+    </div>
+</html>
